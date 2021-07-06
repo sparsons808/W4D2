@@ -4,7 +4,7 @@ class Manager < Employee
 
     attr_accessor :employees
 
-    def intialize(name, title, boss, salary)
+    def initialize(name, title, boss, salary)
         super(name, title, boss, salary)
         @employees = []
     end

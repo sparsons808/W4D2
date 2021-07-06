@@ -4,7 +4,7 @@ class Employee
 
     attr_accessor :name, :title, :boss, :salary
 
-    def intialize(name, title, boss, salary)
+    def initialize(name, title, boss, salary)
         @name = name
         @title = title
         @boss = boss
@@ -14,5 +14,4 @@ class Employee
     def bonus(multiplier=2)
        @salary * multiplier
     end
-
 end
