@@ -2,6 +2,8 @@
 
 class Employee
 
+    attr_accessor :name, :title, :boss, :salary
+
     def intialize(name, title, boss, salary)
         @name = name
         @title = title

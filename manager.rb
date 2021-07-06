@@ -1,9 +1,11 @@
-require_relative '/Users/sydneyparsons/Documents/App_Academy_Work/W4/W4D2/employee.rb'
+require '/Users/sydneyparsons/Documents/App_Academy_Work/W4/W4D2/employee.rb'
 
 class Manager < Employee
 
-    def intialize
-        super
+    attr_accessor :employees
+
+    def intialize(name, title, boss, salary)
+        super(name, title, boss, salary)
         @employees = []
     end
 
@@ -12,6 +14,7 @@ class Manager < Employee
         self.employees.each do |employee|
             total += employee.salary
         end
+        
         return total * multiplier
     end
 end
