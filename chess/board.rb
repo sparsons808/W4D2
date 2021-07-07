@@ -18,7 +18,7 @@ require '/Users/sydneyparsons/Documents/App_Academy_Work/W4/W4D2/chess/pieces/pi
         rows[pos] = val
     end
 
-    def move_piece(start_pos, end_pos)
+    def move_piece(start_pos, end_pos) # need to move piece from start to end
 
         raise "No piece available"
 
