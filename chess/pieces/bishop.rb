@@ -12,8 +12,11 @@ class Bishop < Piece
 
     def move_dirs
         bishop_moves= [
-            [1, 1]
-            [-1, -1]
+            [1, 1],
+            [-1, -1],
+            [1, -1],
+            [-1, 1]
+
         ]
     end
 
