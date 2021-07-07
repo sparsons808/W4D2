@@ -1,7 +1,7 @@
 
 require '/Users/sydneyparsons/Documents/App_Academy_Work/W4/W4D2/chess/board.rb'
 require '/Users/sydneyparsons/Documents/App_Academy_Work/W4/W4D2/chess/colorize-master/lib/colorize.rb'
-require 'cursor'
+# require 'cursor'
 
 class Display
 
@@ -9,16 +9,18 @@ class Display
 
     def initialize
         @board = Board.new
-        @cursor = Cursor.new([0, 0], board)
+        # @cursor = Cursor.new([0, 0], board)
     end
 
+    def ♙
+        puts 'hello world'
+    end 
     def render
-        board.length.times do |row|
-            puts "--------"
-            board.length.times do |col|
-                p "#{board[[row, col]]} "
-            end
+        board.rows.length.times do |row|
             puts ""
+            board.rows.length.times do |col|
+                print "#{board[[row, col]]} ♖"
+            end
         end 
     end
 
