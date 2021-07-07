@@ -6,5 +6,9 @@ class Piece
         @pos = pos # array
     end
 
+    def moves
+
+
+    end
 
 end
